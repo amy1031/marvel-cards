@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/main.min.css" class="rel">
+  <link href="https://fonts.googleapis.com/css?family=Bangers" rel="stylesheet">
+  <title>Marvel Trading Cards</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class- "row">
+      <div class="col-xs-12">
+        <h1 class="text-center">Create your Marvel Card Deck!</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-6 text-center">
+        <h2>Available Characters</h2>
+        <div id="marvel-characters"></div>
+      </div>
+      <div class="col-xs-6 text-center">
+        <h2>Create your List <small>(Limit of 6)</small></h2>
+        <form class="form-inline" onsubmit="cardsCtrl.createPlayer(event)">
+          <div class="form-group">
+            <input type="text" class="form-control" id="name" placeholder="Your Name">
+          </div>
+          <button type="submit" class="btn btn-default">Create Deck</button>
+        </form>
+      </div>
+      <div id="player"></div>
+      <div id="my-characters"></div>
+    </div>
+  </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script src="marvel-service.js"></script>
+  <script src="cards-controller.js"></script>
+  <script src="app.js"></script>
+
+</body>
+
+</html>
